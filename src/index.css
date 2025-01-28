@@ -5,49 +5,132 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 }
+
 body {
   margin: 0;
   display: flexbox;
-  place-items: center;
+  place-items: auto;
+  align-items: center;
+ 
   min-width: 320px;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  width: 100px;
+  margin-left: 10px;
+  margin-top: 20px;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #908989;
   cursor: pointer;
   transition: border-color 0.25s;
 }
-#details{
+
+#details {
   display: flex;
   flex-direction: row;
-  margin : 10px;
+  margin: 10px;
   padding: 10px;
   border: 100px;
 }
-#book-descr{
-width:50%;
-margin-left:20px; 
+
+#book-descr {
+  width: 50%;
+  margin-left: 20px;
 }
-.book-id{
+
+.book-id {
   color: rgb(119, 119, 222);
-  font-family:'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   font-size: larger
 }
-#back:hover{
+
+#back:hover {
   color: aquamarine;
 }
-.book-link:hover{
+
+.book-link:hover {
   color: aquamarine;
+  border: aquamarine 1px solid;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 200px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 2cap;
+}
+a:hover{
+  color: aquamarine;
+
+}
+.nav-bar {
+  background-color: #464242e4;
+ display: flexbox;
+flex-direction: row-reverse;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width:auto;
+}
+.nav-bar-link{
+ margin-right: 20px;
+ padding: 10px;
+}
+.register{
+  display: flexbox;
+}
+.profile{
+ align-content: center;
+  flex-direction: row-reverse;
+}
+#user-profile{
+  border: 1px aquamarine solid;
+  width:100px;
+}
+#user-profile:hover{
+  background-color:aquamarine;
+  color:salmon;
+}
+#email-paragraph{
+  margin-top: -20px;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:#898080;
+}
+.book-display{
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+margin-left:100px;
+}
+.page-title{
+  margin-left: -20px;
+  color:aquamarine;
+  text-decoration:underline;
+  padding-bottom: 8px;;
+}
+.book-author{
+  margin-top: -20px;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:#898080;
+  text-indent: 20px;
+}
+.forms{
+margin-left:100px;
 }

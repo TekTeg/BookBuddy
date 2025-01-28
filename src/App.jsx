@@ -1,16 +1,20 @@
-import { useState} from "react"
-import SelectedBookDetails from "./selectedBookDetails"
-import BookDetails from "./BookDetails"
 import './index.css'
-function App() {
-  const [singleBookDetails, setSingleBookDetails] = useState({})
-  return (
+import Login from "./Login"
+import Register from "./Register"
+import PageSelector from "./PageSelector"
+import { Routes,Route } from "react-router-dom"
+import NavBar from "./NavBar"
 
-    <>{
-      singleBookDetails.book? <SelectedBookDetails singleBookDetails ={singleBookDetails} setSingleBookDetails = {setSingleBookDetails}/>:
-      <BookDetails setSingleBookDetails = {setSingleBookDetails}/>
-  
-    }
+function App() {
+  return (
+    <>
+    <NavBar/>
+    <Routes>
+      <Route path = '/' element ={<PageSelector/>}/>
+      <Route path = '/login' element ={<Login/>}/>
+      <Route path = '/register' element ={<Register className="register"/>}/>
+      
+    </Routes>
     </>
   )
 }

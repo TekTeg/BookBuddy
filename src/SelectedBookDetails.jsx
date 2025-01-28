@@ -8,6 +8,7 @@ const SelectedBookDetails = (props) => {
     <h2><span className ="book-id">Title: </span><u>{props.singleBookDetails.book.title}</u></h2>
     <h4><span className ="book-id">Author: </span> <u>{props.singleBookDetails.book.author}</u></h4>
     <p><span className ="book-id">Descreption: </span>{props.singleBookDetails.book.description} </p>
+    <p><span className ="book-id">Availability: </span>{props.singleBookDetails.book.available? "Yes":'No'} </p>
     </div>
 
   </div>
