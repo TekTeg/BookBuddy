@@ -7,7 +7,7 @@ const Login = (props) => {
   const [loginPassword, setLoginPassword] = useState("")
   const [serverResponse, setServerResponse] = useState({})
   const [token, setToken] = useState('')
-  const [user, setUser] = useState("")
+
 
   const loginAttempt = async () => {
     try {
@@ -35,7 +35,7 @@ const Login = (props) => {
   return (
     
     <div className="forms">
-     {token? <><UserDetails token={token}/><h4>You are logged in</h4><PageSelector/></>:
+     {token? <><UserDetails token={token}/><h4>You are logged in</h4><PageSelector token={token}/></>:
     <>
    
       <h2 className="page-title">Login</h2>
