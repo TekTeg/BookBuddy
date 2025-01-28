@@ -18,13 +18,13 @@ const UserDetails = (props) => {
   }
   return (
     <div className="profile">
-      <h4 onClick={()=>getUserdetails()} id="user-profile">User Profile</h4>
+      <h4 onClick={() => getUserdetails()} id="user-profile">User Profile</h4>
       {
-        user.firstname? <>
-        <p>Name: {user.firstname.toUpperCase()} {user.lastname.toUpperCase()}</p>
-        <p id = "email-paragraph">Email: {user.email} </p></>
-        :null
-        }
+        user.firstname ? <>
+          <p>Name: {user.firstname.toUpperCase()} {user.lastname.toUpperCase()}</p>
+          <p id="email-paragraph">Email: {user.email} </p></>
+          : null
+      }
 
     </div>)
 }

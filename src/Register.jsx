@@ -30,7 +30,7 @@ const Register = () => {
 
 
   return (
-    <div className="forms"><h2 className = "page-title">Sign up</h2>
+    <div className="forms"><h2 className="page-title">Sign up</h2>
       <form onSubmit={registerUser}>
         <input placeholder="firstname" type="text" value={firstname} onChange={(event) => setFirstname(event.target.value)} />
         <input placeholder="lastname" type="text" value={lastname} onChange={(event) => setLastname(event.target.value)} />
